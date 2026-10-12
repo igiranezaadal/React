@@ -1,11 +1,11 @@
-import { createRoot} from "react-dom/client"
-// create root
-const root= createRoot(document.getElementById("root"))
+import { createRoot } from "react-dom/client"
+
+const root = createRoot(document.getElementById("root"))
+const reactElement = <h1>Hello from JSX!</h1>
+
+console.log(reactElement)
+
 root.render(
-    <ul>
-        <li>adal 1</li>
-        <li>adal 2</li>
-        <li>adal 3</li>
-    </ul>
+    reactElement
 )
 

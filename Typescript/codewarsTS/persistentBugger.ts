@@ -6,6 +6,5 @@ export function persistence(num: number): number {
       .reduce((acc, n) => acc * Number(n), 1);
     count++;
   }
-  
   return count;
 }

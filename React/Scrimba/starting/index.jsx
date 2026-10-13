@@ -7,6 +7,7 @@ const reactElement = <h1>Hello from JSX!</h1>
 
 console.log(reactElement)
 
+
 root.render(
     reactElement
 )

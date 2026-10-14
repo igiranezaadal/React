@@ -1,6 +1,6 @@
-function header(){
+function Header(){
     return(
-        <Header>
+        <header>
             <h1>my website</h1>
             <nav>
                 <ul>
@@ -11,7 +11,7 @@ function header(){
                 </ul>
             </nav>
             <hr />
-        </Header>
+        </header>
     );
 }
 

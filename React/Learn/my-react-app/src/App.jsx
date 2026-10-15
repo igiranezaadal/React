@@ -1,12 +1,17 @@
 import Header from './Header.jsx'
-import footer from './Footer.jsx'
+import Footer from './Footer.jsx'
+import Food from './Food.jsx';
 import Student from './Students.jsx';
+import Card from './Card.jsx';
+
 function App() {
   return(
     <>
       <Header/>
-      <footer/>
-      <Student name='Igraneza Rukamba Adal' age={34} status={false} />
+      <Food/>
+      {/* <Student name='Igraneza Rukamba Adal' age={34} status={false} /> */}
+      <Card/>
+      <Footer/>
 
     </>
   );

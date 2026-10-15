@@ -1,6 +1,62 @@
+/* //header */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.headerList{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 10px ;
+}
+.headerList li{
+    padding: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+.headerList li a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+.card{
+    bottom: 1px solid hsl(0,0%,80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%,0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    min-width: 250px;
+    display: inline-block;
+}
+.card .card-img{
+    background: #000;
+    border: 1px solid hsl(61, 100%, 50%);
+    min-width: 60%;
+    height: auto;
+    background-repeat: 50%;
+    margin-bottom: 10px;
+}
+.card .card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+.card .card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 30%);
+    
+}
+
+
+
 .student{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 20px;
     padding: 10px;
     bottom: 1px solid hsla(0,0%,50%,0.8);
 }

@@ -30,7 +30,8 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
-    min-width: 250px;
+    width: 300px;
+    /* min-width: 250px; */
     display: inline-block;
 }
 .card .card-img{

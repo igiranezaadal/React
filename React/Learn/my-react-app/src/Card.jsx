@@ -1,10 +1,11 @@
-// import profilePic from './assets/vite.svg'
+// import profilePic from './assets/pra.png'
 function Card(){
     return(
         <div className="card">
             
-            <img src="https://via.placerholder.com/150" alt="profile" />
-            <h2 className='card-title'>bro code</h2>
+            {/* <img src="https://via.placerholder.com/150" alt="profile" /> */}
+            <img src="src/assets/pra.png" alt="profile" height="100" width="100"/>
+            <h2 className='card-title'>Adal</h2>
             <p className='card-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, in?</p>
         </div>
     );

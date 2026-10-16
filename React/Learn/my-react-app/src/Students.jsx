@@ -1,4 +1,5 @@
 function Student(props){
+
     return(
         <div className="student">
             <p>Name: {props.name} as props value</p>

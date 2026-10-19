@@ -33,6 +33,7 @@
     width: 300px;
     /* min-width: 250px; */
     display: inline-block;
+    margin-bottom: 20px;
 }
 .card .card-img{
     background: #000;
@@ -63,4 +64,14 @@
 }
 .student p{
     margin: 0;
+}
+
+.button{
+    margin: 20px;
+    background-color: hsl(200, 100%, 10%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    bottom: none;
+    cursor: pointer;
 }

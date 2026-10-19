@@ -4,6 +4,7 @@ import Food from './Food.jsx';
 import Student from './Students.jsx';
 import Card from './Card.jsx';
 import Counter from './Counter.jsx'
+import Button from './Button.jsx';
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
       <Card/>
       <Card/>
       <Counter></Counter>
+      <Button/>
       <Student name='Igraneza Rukamba Adal' age={34} status={false} />
       <Footer/>
 

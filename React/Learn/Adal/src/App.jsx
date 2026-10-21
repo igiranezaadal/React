@@ -1,12 +1,10 @@
 // import { useState } from 'react'
-import MainContent from './MainContent.jsx'
+import Nav from '../src/Nav.jsx'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <MainContent/>
+      <Nav/>
     </>
   );
 }

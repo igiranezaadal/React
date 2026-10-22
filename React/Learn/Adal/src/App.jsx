@@ -1,10 +1,10 @@
 // import { useState } from 'react'
-import Nav from '../src/Nav.jsx'
+import Navbar from '../src/Navbar.jsx'
 
 function App() {
   return (
     <>
-      <Nav/>
+      <Navbar/>
     </>
   );
 }

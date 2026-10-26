@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: Inter, sans-serif;
     background-color: #282D35;
-    color:white;
+    color: white;
 }
 
 header {
@@ -19,7 +19,6 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
-
 }
 
 nav > img {
@@ -34,14 +33,20 @@ nav > span {
 }
 
 main {
-    padding: 0;
+    padding: 60px 30px;
 }
 
-.fact-list{
-    margin-top: 46px;
-    max-width: 40px;
+main > h1 {
+    margin: 0;
+    font-size: 2.4rem;
 }
-.fact-list > li{
+
+.facts-list {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.facts-list > li {
     padding-block: 10px;
     line-height: 19px;
 }

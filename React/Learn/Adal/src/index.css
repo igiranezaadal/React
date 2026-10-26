@@ -4,7 +4,9 @@
 
 body {
     margin: 0;
-    font-family: Inter
+    font-family: Inter, sans-serif;
+    background-color: #282D35;
+    color:white;
 }
 
 header {
@@ -17,11 +19,11 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
+
 }
 
 nav > img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
     margin-right: 7px;
 }
 
@@ -29,4 +31,17 @@ nav > span {
     color: #61DAFB;
     font-size: 1.4rem;
     font-weight: 700;
+}
+
+main {
+    padding: 0;
+}
+
+.fact-list{
+    margin-top: 46px;
+    max-width: 40px;
+}
+.fact-list > li{
+    padding-block: 10px;
+    line-height: 19px;
 }

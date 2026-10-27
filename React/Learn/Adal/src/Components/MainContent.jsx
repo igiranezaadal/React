@@ -1,8 +1,8 @@
 function MainContent() {
     return (
-        <main className="fact-list">
+        <main>
             <h1>Fun facts about React</h1>
-            <ul>
+            <ul className="fact-list">
                 <li>React is a JavaScript library for building user interfaces.</li>
                 <li>React uses a virtual DOM to improve performance.</li>
                 <li>Components are the building blocks of a React application.</li>

@@ -29,17 +29,23 @@
     font-size: 16px;
   }
 } */
+/* body{ 
+  background-color: hsl(0,0%,10%);
+}
+*/
 .to-do-list{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-top: 100px;
   width: 70%;
   margin: auto;
-  border: 2px solid black;
+  /* border: 2px solid hsl(0, 0%, 80%); */
   border-radius: 5px;
   box-shadow: 5px 4px 5px 1px hsl(0,0%,10%);
+  /* color: #fff; */
 }
 h1{
+  margin-top: 10px;
   font-style: 4rem;
 }
 button{
@@ -88,5 +94,18 @@ li{
   font-style: 3rem;
   font-weight: bold;
   padding: 15px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  bottom: 3px solid hsl(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+}
+.delete-button ,.move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }

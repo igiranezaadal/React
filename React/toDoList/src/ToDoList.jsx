@@ -7,7 +7,10 @@ function ToDoList(){
     function HandleInputChange(event){
         setNewTasks(event.target.value);
     }
-    function addTask(){}
+    function addTask(){
+        setTasks(t=> [...t,newTask])
+        setNewTasks("")
+    }
     function deleteTask(){}
     function moveTaskUp(){}
 

@@ -46,10 +46,7 @@ function ToDoList(){
         <div className="to-do-list">
             <h1>To-do-list</h1>
             <div className="">
-                <input 
-                type="text"
-                placeholder="Enter a task..." 
-                value={newTask}
+                <input type="text" placeholder="Enter a task..." value={newTask}
                 onChange={HandleInputChange} />
                 <button
                     className="add-button"

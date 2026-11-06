@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 function ToDoList(){
-    const [task,setTasks]=useState(["Eat Break fast", "Take a shower", "Work the dog"]);
+    const [task,setTasks]=useState(["IAMHERE", "Take a shower", "Work the dog"]);
     const [newTask,setNewTasks]=useState('');
 
     function HandleInputChange(event){
@@ -44,7 +44,7 @@ function ToDoList(){
             </section>
         </nav>
         <div className="to-do-list">
-            <h1>To-do-list</h1>
+            <h1>Todos</h1>
             <div className="">
                 <input type="text" placeholder="Enter a task..." value={newTask}
                 onChange={HandleInputChange} />

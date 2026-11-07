@@ -14,25 +14,25 @@ function DisplayApp() {
       <div>
         <strong>Display Area:</strong> {displayText}
       </div> */}
-      <input type="text" value="AC" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="+/-" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="%" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="AC"className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="7" onClick="{}" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="8" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="9" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="/" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="4" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="5" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="6" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="+" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="1" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="2" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="3" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="-" className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="0" className=' border border-gray-500 col-span-2 text-center text-3xl'/>
-      <input type="text" value="." className=' border border-gray-500 text-center text-3xl'/>
-      <input type="text" value="=" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="AC" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="+/-" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="%" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="AC"className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="7" onClick="{}" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="8" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="9" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="/" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="4" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="5" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="6" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="+" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="1" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="2" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="3" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="-" className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="0" className=' border border-gray-500 text-center text-3xl col-span-2'/>
+      <input type="text" disabled value="." className=' border border-gray-500 text-center text-3xl'/>
+      <input type="text" disabled value="=" className=' border border-gray-500 text-center text-3xl'/>
     </div>
   );
 }

@@ -52,7 +52,7 @@ function ToDoList(){
                     className="add-button"
                     onClick={addTask}
                     >
-                    Add
+                    <span className="plus">+</span>
                 </button>
             </div>
             <ol>

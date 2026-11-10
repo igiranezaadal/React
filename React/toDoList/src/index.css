@@ -30,6 +30,7 @@
   border-radius: 5px;
   box-shadow: 5px 5px 15px -1px hsl(0,0%,10%);
   /* color: #fff; */
+  /* display: flex; */
 }
 h1{
   margin-top: 10px;
@@ -45,22 +46,32 @@ button{
   transition: background-color 0.5s ease;
   margin: 2px 5px;
   padding: 4px 15px;
+  /* background: #000; */
 }
 .add-button{
+
   background-color: hsl(125,47%,54%);
+  height: 30px;
+  margin-left: 10px;
 }
 .add-button:hover{
   background-color: hsl(125,47%,44%);
 }
 
 .delete-button{
-  background-color: hsl(10,90%,50%);
+  margin-top: -10px;
+  height: 40px;
+  /* width: 30px; */
+  background-color: hsl(0, 5%, 80%);
+  /* background-color: hsl(0, 100%, 46%); */
 }
 .delete-button:hover{
-  background-color: hsl(10,90%,40%);
+  background-color: hsl(0, 5%, 90%);
 }
 
 .move-button{
+  height: 40px;
+  padding: 0;
   background-color: hsl(207,90%,64%);
 }
 .move-button:hover{
@@ -81,18 +92,19 @@ ol{
   padding: 0;
 }
 li{
+  margin-left: 30px;
   font-style: 3rem;
   font-weight: bold;
   padding: 15px;
-  background-color: hsl(0, 0%, 97%);
-  margin-bottom: 10px;
-  bottom: 3px solid hsl(0, 0%, 85%, 0.75);
-  border-radius: 5px;
+  /* background-color: hsl(0, 0%, 97%); */
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+
 }
 .text{
   flex: 1;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 .delete-button ,.move-button{
   padding: 8px 12px;

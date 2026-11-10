@@ -46,11 +46,11 @@ function App() {
   return (
     <>
     <div className="flex justify-center items-center h-screen">
-      <div className="w-80 bg-gray-400  overflow-hidden">
+      <div className="w-80  overflow-hidden">
         <input
           type="text" placeholder="0" value={display}
           onChange={(e) => setDisplay(e.target.value)}
-          className="w-full bg-gray-600 text-white h-20 text-right text-4xl p-4 border-b border-gray-500 focus:outline-none"
+          className="w-full bg-gray-600 text-white h-15 text-right text-4xl p-4 border-b border-gray-500 focus:outline-none"
         />
 
         <div className="grid grid-cols-4 text-center text-black bg-gray-100 h-96 text-2xl font-semibold">
@@ -116,7 +116,7 @@ function App() {
         </div>
       </div>
     </div>
-    
+
     <DisplayApp/>
     </>
   )

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 function ToDoList(){
-    const [task,setTasks]=useState(["IAMHERE", "Take a shower", "Work the dog"]);
+    const [task,setTasks]=useState(["Anki", "React Hooks", "React Router"]);
     const [newTask,setNewTasks]=useState('');
 
     function HandleInputChange(event){
@@ -58,22 +58,16 @@ function ToDoList(){
             <ol>
                 {task.map((task,index)=> //fix error here
                     <li key={index}>
-                        <span className="text">{task}</span>
+                        <div className="leftSide">
+                            <input type="checkbox" />
+                            <span className="text">{task}</span>
+                        </div>
                         <button 
                             className="delete-button"
                             onClick={()=>deleteTask(index)}
                             >
-                            delete
-                        </button>
-                        <button 
-                            className="move-button"
-                            onClick={()=>moveTaskUp(index)}>
-                            ☝🏿
-                        </button>
-                        <button 
-                            className="move-button"
-                            onClick={()=>moveTaskDown(index)}>
-                            👇🏿
+                            {/* ❌ */}
+                            🗑️
                         </button>
                     </li>
                 )}

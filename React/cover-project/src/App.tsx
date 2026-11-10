@@ -14,6 +14,10 @@ function Header(){
         <span className="text-zinc-400 text-sm">
           1 / 1 done today
         </span>
+        <div className="flex items-center gap-3">
+          <button>Prev</button>
+          <button>Next</button>
+        </div>
       </div>
     </header>
   );

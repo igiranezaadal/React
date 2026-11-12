@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import del from "./assets/delete-filled.svg";
+import del from "./assets/delete.webp";
 
 function ToDoList(){
     const [task,setTasks]=useState(["Anki", "React Hooks", "React Router"]);
@@ -60,7 +60,7 @@ function ToDoList(){
                 {task.map((task,index)=> //fix error here
                     <li key={index}>
                         <div className="leftSide">
-                            <input type="checkbox" />
+                            <input type="checkbox" onChange={() => {delTag()}} />
                             <span className="text">{task}</span>
                         </div>
                         <button 

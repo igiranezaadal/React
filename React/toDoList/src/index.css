@@ -23,21 +23,26 @@
 
 .to-do-list{
   text-align: center;
-  margin-top: 100px;
+  padding: 10px 50px;
   width: 70%;
   margin: auto;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -1px hsl(0,0%,10%);
+  min-height: 200px;
 }
 h1{
-  margin-top: 10px;
+  margin-top: 20px;
   font-style: 4rem;
+  font-weight: bold;
+  font-size: 80px;
+  color: hsl(0, 0%, 80%);
 }
 
 .input-container{
   /* display: flex;
   justify-content: center; */
   margin: 0px auto;
+  /* margin-bottom: 20px; */
   width: 50%;
   height: 50px;
 
@@ -74,30 +79,55 @@ button{
 }
 .add-button{
 
-  background-color: hsl(125,47%,54%);
-  height: 40px;
-  margin-left: 10px;
+  background-color: darkcyan;
+  height: 30px;
+  width: 30px;
+  /* margin-left: 10px; */
   float: right;
-
   border-radius: 50%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 0px 0px;
   .plus{
     font-size: 1.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
+    color: white !important;
+    color: darkcyan;
+    /* background: transparent; */
+    /* border: none; */
+    cursor: pointer;
   }
 }
 .add-button:hover{
-  background-color: hsl(125,47%,44%);
+  transition: 0.5s;
+  background-color: rgb(2, 182, 182);
 }
 
 
 
 .delete-button{
   margin-top: -10px;
-  height: 40px;
-  background-color: hsl(0, 5%, 80%);
+  width: 60px;
+  height: 60px;
+  background-color: hsl(0, 5%, 95%);
+  border-radius: 50%;
 }
 .delete-button:hover{
-  background-color: hsl(0, 5%, 90%);
+  background-color: hsl(0, 5%, 80%);
+}
+
+.delete-button ,.move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+.delete-icon{
+  width: 20px;
+  height: 20px;
+  background: none;
+  /* background-color: hsl(0, 100%, 58%); */
 }
 
 .move-button{
@@ -123,6 +153,7 @@ li{
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid hsl(0, 0%, 80%, 0.5);
 
 }
 
@@ -131,13 +162,4 @@ li{
   padding-right: 20px;
   padding-left: 10px;
 }
-.delete-button ,.move-button{
-  padding: 8px 12px;
-  font-size: 1.4rem;
-  margin-left: 10px;
-}
-.delete-icon{
-  width: 20px;
-  height: 20px;
-  /* background-color: hsl(0, 100%, 58%); */
-}
+

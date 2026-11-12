@@ -46,7 +46,7 @@ function ToDoList(){
         </nav>
         <div className="to-do-list">
             <h1>Todos</h1>
-            <div className="">
+            <div className="input-container">
                 <input type="text" placeholder="Enter a task..." value={newTask}
                 onChange={HandleInputChange} />
                 <button

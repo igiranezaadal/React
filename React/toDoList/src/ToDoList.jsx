@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import del from "./assets/delete-filled.svg";
 
 function ToDoList(){
     const [task,setTasks]=useState(["Anki", "React Hooks", "React Router"]);
@@ -67,7 +68,8 @@ function ToDoList(){
                             onClick={()=>deleteTask(index)}
                             >
                             {/* ❌ */}
-                            🗑️
+                            {/* 🗑️ */}
+                            <img src={del} className="delete-icon" alt="delete task" srcset="" />
                         </button>
                     </li>
                 )}

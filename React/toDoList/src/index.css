@@ -118,3 +118,8 @@ li{
   font-size: 1.4rem;
   margin-left: 10px;
 }
+.delete-icon{
+  width: 20px;
+  height: 20px;
+  /* background-color: hsl(0, 100%, 58%); */
+}

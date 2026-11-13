@@ -75,3 +75,12 @@
     bottom: none;
     cursor: pointer;
 }
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 20%);
+    font-size: 14px;
+    float: bottom;
+}

@@ -32,6 +32,11 @@ function ToDoList(){
             setTasks(updatedTasks);
         }
     }
+    // function delTag(index){
+    //     if (completed.includes(Number(index))){
+    //     setCompleted(completed.filter((item)=>item!==index));
+    //     }
+    // }
 
     return(
     <>
@@ -60,7 +65,7 @@ function ToDoList(){
                 {task.map((task,index)=> //fix error here
                     <li key={index}>
                         <div className="leftSide">
-                            <input type="checkbox" onChange={() => {delTag()}} />
+                            <input type="checkbox" />
                             <span className="text">{task}</span>
                         </div>
                         <button 

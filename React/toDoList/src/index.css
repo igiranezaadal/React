@@ -2,12 +2,15 @@
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
 }
 .App-header{
+  background: hsl(0, 0%, 95%);
   display: flex;
   justify-content: space-between;
-  margin: 0px 10% 0 10%;
+  padding: 0px 10% 0 10%;
 }
 .App-nav{
   margin: 15px 0px;
@@ -25,7 +28,7 @@
   text-align: center;
   padding: 10px 50px;
   width: 70%;
-  margin: auto;
+  margin:  30px auto;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -1px hsl(0,0%,10%);
   min-height: 200px;
@@ -39,15 +42,9 @@ h1{
 }
 
 .input-container{
-  /* display: flex;
-  justify-content: center; */
   margin: 0px auto;
-  /* margin-bottom: 20px; */
   width: 50%;
   height: 50px;
-
-  /* align-items: center; */
-  /* margin-bottom: 20px; */
   box-shadow: 0px 1px 5px 1px hsl(0,0%,10%, 0.3);
   border-radius: 50px;
 }
@@ -57,11 +54,7 @@ input[type="text"]{
   width: 80%;
   height: 80%;
   margin-top: 6px;
-  /* padding: 10px; */
-  /* border: 1px solid hsl(0, 0%, 80%, 0.5); */
   border: none;
-  /* border-radius: 50px; */
-  /* box-shadow: 0px 1px 5px 1px hsl(0,0%,10%, 0.3); */
   color: hsl(0,0%,0%, 0.5);
   outline: none;
 }
@@ -82,7 +75,6 @@ button{
   background-color: darkcyan;
   height: 30px;
   width: 30px;
-  /* margin-left: 10px; */
   float: right;
   border-radius: 50%;
   flex: 1;
@@ -92,11 +84,8 @@ button{
   margin: 8px 8px 0px 0px;
   .plus{
     font-size: 1.5rem;
-    /* font-weight: bold; */
     color: white !important;
     color: darkcyan;
-    /* background: transparent; */
-    /* border: none; */
     cursor: pointer;
   }
 }
@@ -127,7 +116,6 @@ button{
   width: 20px;
   height: 20px;
   background: none;
-  /* background-color: hsl(0, 100%, 58%); */
 }
 
 .move-button{
@@ -161,13 +149,10 @@ li{
   /* border: 1px solid hsl(0, 0%, 80%, 0.5); */
   max-width: 200px;
   min-width: 80px;
-  /* padding-right: 20px;
-  padding-left: 10px; */
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin: 0px 10px;
-  /* font-size: 1.5rem; */
   color: hsl(0, 0%, 40%);
 }
 

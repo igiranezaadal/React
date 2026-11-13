@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import del from "./assets/delete.webp";
 
 function ToDoList(){
-    const [task,setTasks]=useState(["Anki", "React Hooks", "React Router"]);
+    const [task,setTasks]=useState(["IAmHere", "reactjsexample.com", "A To do app developed using to consilidate yor knowldge about React"]);
     const [newTask,setNewTasks]=useState('');
 
     function HandleInputChange(event){
@@ -33,11 +33,6 @@ function ToDoList(){
             setTasks(updatedTasks);
         }
     }
-    // function delTag(index){
-    //     if (completed.includes(Number(index))){
-    //     setCompleted(completed.filter((item)=>item!==index));
-    //     }
-    // }
 
     return(
     <>
@@ -50,6 +45,7 @@ function ToDoList(){
                 <span className="nav-item">about us</span>
             </section>
         </nav>
+        {/* <hr /> */}
         <div className="to-do-list">
             <h1>Todos</h1>
             <div className="input-container">

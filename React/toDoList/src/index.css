@@ -171,3 +171,9 @@ li{
   color: hsl(0, 0%, 40%);
 }
 
+.strikethrough-checkbox:checked + span {
+  text-decoration: line-through;
+  /* color: gray; */
+  color: gray;
+}
+

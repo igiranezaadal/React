@@ -9,6 +9,7 @@ function ToDoList(){
         setNewTasks(event.target.value);
     }
     function addTask(){
+        if (newTask.trim() === "") return;
         setTasks(t=> [...t,newTask])
         setNewTasks("")
     }
@@ -65,8 +66,10 @@ function ToDoList(){
                 {task.map((task,index)=> //fix error here
                     <li key={index}>
                         <div className="leftSide">
-                            <input type="checkbox" />
-                            <span className="text">{task}</span>
+                            <input type="checkbox" className="strikethrough-checkbox"/>
+                            <span className="text">
+                                {task}
+                            </span>
                         </div>
                         <button 
                             className="delete-button"

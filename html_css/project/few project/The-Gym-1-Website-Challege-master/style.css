@@ -1,0 +1,22 @@
+
+.hero-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.489)),url('./assets/hero-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 65vh;
+}
+.meeting-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.489)),url('./assets/Meeting.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+}
+.cta-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.489)),url('./assets/cta-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+}

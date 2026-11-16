@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 box-border">
+    <header class="bg-white shadow position-sticky top-0 left-0 z-10">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold">Welcome to My App</h1>
+            <div>
+                <nav class="mt-4">
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+ <!-- grid grid-cols-1 md:grid-cols-2 gap-4 -->
+    <main class="container mx-auto px-4 py-6 flex gap-4 bg-gray-100">
+        <aside class="bg-gray-200 p-5 text-start w-40 text-lg font-semibold mb-2">
+            <p class="text-gray-600 hover:text-gray-800"><select name="teams" class=" rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value=";sdl ">Select a team</option>
+                <option value="teams"> Barcelona</option>
+                <option value="teams">Manchester City</option>
+                <option value="teams">Real Madrid</option>
+                <option value="teams">Liverpool</option>
+                <option value="teams">Bayern Munich</option>
+                <option value="teams">PSG</option>
+                <option value="teams">Other</option>
+            </select></p>   
+            <p class="text-gray-600 hover:text-gray-800">tournaments</p>
+            <p class="text-gray-600 hover:text-gray-800">fixtures</p>
+            <p class="text-gray-600 hover:text-gray-800">results</p>
+            <p class="text-gray-600 hover:text-gray-800">standings</p>
+            <p class="text-gray-600 hover:text-gray-800">statistics</p>
+            <p class="text-gray-600 hover:text-gray-800">awards</p>
+        </aside>
+        <section class="bg-blue-200 p-5 w-full gap-4">
+            <h2 class="text-xl font-semibold mb-4">Welcome to My App</h2>
+            <p class="text-gray-700">This is a simple application built with Tailwind CSS.</p>
+
+            <div class=" flex justify-center mt-6 ">
+                <div class="flex-col bg-white m-4 p-8 rounded-2xl shadow-xl text-center border border-gray-200">
+                    <img src="rihanna-fenty-getty-1.webp" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-blue-500 bg-no-repeat" alt="Profile">
+                    <h2 class="text-2xl font-bold text-gray-800">Prime Adal</h2>
+                    <p class="text-blue-600 font-medium mt-6 mb-0">Frontend Developer</p>
+                    <div class="text-gray-600 text-sm mt-6">
+                        Passionate about building clean, responsive user interfaces with Tailwind CSS and React.
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <button class="border border-gray-300 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition active:bg-blue-500 ">Follow</button>
+                        <button class="border border-gray-300 px-2 py-2 rounded-lg font-semibold hover:bg-gray-100 transition active:bg-blue-600">Message</button>
+                    </div>
+                </div>
+
+                <div class="flex-col bg-white m-4 p-8 rounded-2xl shadow-xl text-center border border-gray-200">
+                    <img src="testR.png" alt="Profile" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-blue-500">
+                    <h2 class="text-2xl font-bold text-gray-800">Alex Rivera</h2>
+                    <p class="text-blue-600 font-medium mb-4">Frontend Developer</p>
+                    <div class="text-gray-600 text-sm mt-6 flex flex-wrap gap-4">
+                        Passionate about building clean, responsive user interfaces with Tailwind CSS and React.
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <button class="border border-gray-300 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition active:bg-blue-500 ">Follow</button>
+                        <button class="border border-gray-300 px-2 py-2 rounded-lg font-semibold hover:bg-gray-100 transition active:bg-blue-600">
+                            Message
+                        </button>
+                    </div>
+                    <button class="w-70 h-20 bg-blue-500 p-5 m-5 rounded-lg text-lg text-white  hover:bg-blue-600">subscribe</button>
+                </div>
+                
+            </div>
+            
+            <!-- <div class="text-center rounded bg-green-400 w-70 h-70 content-center item-center">play</div> -->
+            <!-- <div class="w-70 h-70 bg-blue-500 p-5 text-center">Hello, Tailwind CSS!</div> -->
+            
+            <div class="w-20 h-20 bg-blue-500 rounded-4xl m-auto my-8 animate-spin "></div>
+
+            <div>
+                <h1 class="text-center text-2xl font-bold">football</h1>
+                <p class="text-gray-600 font-medium p-2">Welcome to the football section! </p>
+                <table class="w-full text-center bg-green-200 mt-4 rounded-lg border border-gray-300 shadow-md">
+                    <thead class="bg-gray-500 py-2 rounded-lg">
+                        <tr class="b"><th>pos</th><th>team</th><th>points</th><th>Wins</th><th>Losses</th><th>Draws</th><th>goals</th><th>goals conceded</th></tr>
+                        <tr  class="bg-green-200"><td>1</td><td>barcelona</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</td></tr>
+                        <tr class="bg-green-200"><td>2</td><td>manchester city</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</td></tr>
+                        <tr  class="bg-red-200"><td>3</td><td>real madrid</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</ td></tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="overflow-x-auto shadow-md sm:rounded-lg pt-12">
+                <table class="w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Product Name</th>
+                            <th scope="col" class="px-6 py-3">Category</th>
+                            <th scope="col" class="px-6 py-3">Price</th>
+                            <th scope="col" class="px-6 py-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Apple MacBook Pro 17"</th>
+                            <td class="px-6 py-4">Laptop</td>
+                            <td class="px-6 py-4">$2999</td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Microsoft Surface Pro</th>
+                            <td class="px-6 py-4">Laptop PC</td>
+                            <td class="px-6 py-4">$1999</td>
+                            <td class="px-6 py-4">
+                                <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-cols-12 gap-2 h-auto mt-4">
+                <!-- Sidebar: takes up 3 out of 12 columns -->
+                <aside class="col-span-3 bg-gray-800 text-white p-6">
+                    Navigation
+                    <div class="">
+                        <ul class="space-y-4">
+                            <li><a href="#" class="block px-3 py-2 rounded hover:bg-gray-700">Dashboard</a></li>
+                            <li><a href="#" class="block px-3 py-2 rounded hover:bg-gray-700">Profile</a></li>
+                            <li><a href="#" class="block px-3 py-2 rounded hover:bg-gray-700">Settings</a></li>
+                            <li><a href="#" class="block px-3 py-2 rounded hover:bg-gray-700">Logout</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Content: takes up 9 out of 12 columns -->
+                <main class="col-span-9 bg-gray-100 p-6">
+                    <div class="grid grid-cols-2 gap-4">
+                    <section class="bg-white p-4 shadow">
+                        <h1 class="text-xl font-bold mb-4">Left Content Card</h1>
+                        <div class="transition duration-500 ease-in-out transform hover:scale-110 hover:bg-red-500 p-4">
+                            Hover over me to grow and change color!
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 text-center ">
+                            <div class="flex col-span-2 ">
+                                <div class="bg-blue-500 p-4 w-204 m-2 rounded-lg">Part 1</div>
+                                <div class="bg-green-500 p-4 w-100 m-2 rounded-lg">Part 2</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 grid-flow-col text-center">
+                            <div class="bg-yellow-500 p-4 w-auto m-2 rounded-lg">Part 3</div>
+                            <div class="bg-gray-500 p-4 w-auto m-2 rounded-lg">Part 4</div>
+                            <div class="bg-purple-500 p-4 w-auto m-2 rounded-lg">Part 5</div>
+                        </div>
+                        <!-- <div class="animate-[wiggle_1s_ease-in-out_infinite]-spin">...</div> -->
+                    </section>
+                    <section class="bg-white p-4 shadow">
+                        <h1 class="text-xl font-bold mb-4">Right Content Card</h1>
+                        <div class="bg-gradient-to-b-red from-blue-500 to-red-500 w-auto h-70 flex justify-center items-center">
+                        <div class="flex bg-yellow-500 w-auto h-auto justify-center items-center p-4 rounded-lg transition duration-500 ease-in-out transform hover:scale-110">bg-gradient-to-direction</div>
+                    </div>
+                    </section>
+                    </div>
+                </main>
+            </div>
+            
+        </section>
+    </main>
+<!-- <button class="bg-blue-500 text-white p-2 rounded flex items-center">Spinning SVG Icon<svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24 bg-c-red-500"></svg>Processing...</button> -->
+    <footer class="p-2 bg-gray-800 text-white content-full">
+        <div class="grid grid-cols-3 grid-flow-rows grid-rows-2 gap-4 text-center">
+            <div class="bg-blue-500 p-4 w-auto rounded-lg">Part 1</div>
+            <div class="bg-green-500 p-4 w-auto rounded-lg row-start-3">Part 2</div>
+            <div class="bg-yellow-500 p-4 w-auto rounded-lg col-start-3">Part 3</div>
+            <div class="bg-gray-500 p-4 w-auto rounded-lg col-start-2">Part 4</div>
+            <div class="bg-purple-500 p-4 w-auto rounded-lg row-start-3 col-start-3">Part 5 </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

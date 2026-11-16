@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fewo-direkt</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-white">
+    <!-- Navigation -->
+    <header class="flex items-center justify-around mx-6 p-4 hidden lg:flex">
+      <!-- logo -->
+      <div class="w-48">
+        <img
+          src="./assets/logo.png"
+          alt="logo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <!-- nav links -->
+      <nav class="flex items-center gap-4">
+        <a href="#" class=""
+          ><button
+            class="flex items-center gap-2 px-4 py-1.5 border border-gray-200 rounded-full bg-white"
+          >
+            <span class="text-blue-500 text-sm">Open app</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
+            </svg></button
+        ></a>
+        <a href="#" class="text-sm text-black">Travel planner</a>
+        <a href="#" class="text-sm text-black">Register accommodation</a>
+        <a href="#" class="text-sm text-black">Help</a>
+        <a href="#" class="text-sm text-black">My travels</a>
+        <a href="#" class="text-sm text-black">Register</a>
+      </nav>
+    </header>
+    <!-- hero -->
+    <section class="hero-bg flex flex-col items-center justify-center px-4 lg:px-10">
+      <h1 class="text-white text-4xl mb-20 lg:mb-36 mt-10">
+        All the accommodation just for you
+      </h1>
+      <div
+        class="bg-gray-100 relative mb-4 p-3 w-full flex flex-col lg:flex-row items-center gap-5 border border-gray-200 rounded-2xl"
+      >
+        <!-- input location -->
+        <div class="relative">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute bottom-2 lg:bottom-4 left-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+
+          <input
+            type="text"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-80 bg-white border border-gray-300 rounded-2xl"
+            placeholder="Where should we go?"
+          />
+        </div>
+
+        <!-- input date -->
+        <div class="relative">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute bottom-2 lg:bottom-4 left-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z"
+            />
+          </svg>
+
+          <input
+            type="date"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-80 bg-white border border-gray-300 rounded-2xl flex flex-col"
+          />
+        </div>
+
+        <!-- input guest -->
+        <div class="relative">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 absolute bottom-2 lg:bottom-4  left-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+
+          <input
+            type="text"
+            class="py-2 lg:py-4 px-16 lg:px-10 w-full lg:w-80 bg-white border border-gray-300 rounded-2xl"
+            placeholder="Guests"
+          />
+        </div>
+
+        <!-- search button -->
+        <button class="py-3 px-10 lg:px-4 border rounded-full bg-gray-300 text-white absolute right-3 bottom-1 md:bottom-3 ">
+          Search
+        </button>
+      </div>
+    </section>
+
+    <!-- trips section -->
+    <section class="min-h-screen bg-white p-3 lg:p-10">
+      <div
+        class="bg-[#181F3B] min-h-[11vh] p-3 flex items-center justify-between border border-[#181F3B] rounded-2xl"
+      >
+        <!-- first contents -->
+        <div class="flex items-center gap-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffffff"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+            />
+          </svg>
+          <h3 class="text-white text-xs md:text-sm">
+            Sign up to send a message to the host and get more details about an
+            accommodation.
+          </h3>
+        </div>
+        <!-- right button -->
+        <button
+          class="py-2.5 px-4 bg-[#181F3B] hover:bg-gray-700 cursor-pointer hover:border hover:border-[#181F3B] hover:rounded-full text-white text-sm"
+        >
+          Login
+        </button>
+      </div>
+
+      <!-- browse trips -->
+      <div class="">
+        <div class="mt-16">
+          <h3 class="text-black text-3xl">Browse weekend trips</h3>
+          <p class="text-sm text-black">
+            Offers for the period:10. Apr.–12. Apr.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-6">
+          <!-- first item 1 -->
+          <div>
+            <div class="w-full lg:w-72 h-72 relative">
+              <div
+                class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
+              >
+                <!-- arrow left -->
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <!-- arrow right -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                src="https://picsum.photos/200/300"
+                alt="item"
+                class="w-full h-full object-cover border border-gray-50 rounded-2xl overflow-hidden"
+              />
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <div class="flex flex-col gap-2">
+                <!-- rate -->
+                <div class="flex items-center gap-2 mt-3">
+                  <span
+                    class="w-8 h-5 text-sm flex items-center justify-center text-white bg-[#137D3B] border border-[#137D3B] rounded-lg"
+                  >
+                    9.8
+                  </span>
+                  <span class="text-black"> Exceptional (165 reviews) </span>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h4 class="">Comfort apartement in the countryside</h4>
+                  <span class="">Wardenburg</span>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-black text-xl">275 €</span>
+                <p class="text-black text-sm">
+                  for 1 room, 2 nights 137 € per night including taxes & fees
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- first item 2 -->
+          <div>
+            <div class="w-full lg:w-72 h-72 relative">
+              <div
+                class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
+              >
+                <!-- arrow left -->
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <!-- arrow right -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                src="https://picsum.photos/200/300"
+                alt="item"
+                class="w-full h-full object-cover border border-gray-50 rounded-2xl overflow-hidden"
+              />
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <div class="flex flex-col gap-2">
+                <!-- rate -->
+                <div class="flex items-center gap-2 mt-3">
+                  <span
+                    class="w-8 h-5 text-sm flex items-center justify-center text-white bg-[#137D3B] border border-[#137D3B] rounded-lg"
+                  >
+                    9.4
+                  </span>
+                  <span class="text-black"> Exceptional (137 reviews) </span>
+                </div>
+               
+                <div class="flex flex-col justify-center">
+                  <h4 class="truncate w-72"> Holiday home with sauna,grill kota and bathtub directly on the beach Heeder See!</h4>
+                  <span class="">Heede</span>
+                </div>
+              </div>
+              <div class="flex flex-col w-72">
+                <span class="text-black text-xl">663 €.</span>
+                <p class="text-black text-sm">
+                  for 1 holiday cabin, 2 nights <br>
+                  332 € per night <br>
+                  including taxes & fees
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- first item 3 -->
+          <div>
+            <div class="w-[95%] lg:w-72 h-72 relative">
+              <div
+                class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
+              >
+                <!-- arrow left -->
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <!-- arrow right -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                src="https://picsum.photos/200/300"
+                alt="item"
+                class="w-full h-full object-cover border border-gray-50 rounded-2xl overflow-hidden"
+              />
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <div class="flex flex-col gap-2">
+                <!-- rate -->
+                <div class="flex items-center gap-2 mt-3">
+                  <span
+                    class="w-8 h-5 text-sm flex items-center justify-center text-white bg-[#137D3B] border border-[#137D3B] rounded-lg"
+                  >
+                    9.8
+                  </span>
+                  <span class="text-black"> Exceptional (164 reviews) </span>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h4 class="truncate w-72">Design-oriented historic farmhouse (360 m²) - the ideal FAMILY MEETING PLACE</h4>
+                  <span class="">Trebel</span>
+                </div>
+              </div>
+              <div class="flex flex-col w-72">
+                <span class="text-black text-xl">819 €</span>
+                <p class="text-black text-sm">
+                  for 1 room, 2 nights <br>
+
+                  410 € per night <br>
+
+                  including taxes & fees
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- first item 4 -->
+          <div>
+            <div class="w-full lg:w-72 h-72 relative">
+              <div
+                class="absolute top-5 bottom-5 w-full flex items-center justify-between px-1"
+              >
+                <!-- arrow left -->
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+
+                <div
+                  class="bg-gray-800 p-2 border border-[#1E2233] rounded-full"
+                >
+                  <!-- arrow right -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                src="https://picsum.photos/200/300"
+                alt="item"
+                class="w-full h-full object-cover border border-gray-50 rounded-2xl overflow-hidden"
+              />
+            </div>
+            <div class="flex flex-col items-center gap-5">
+              <div class="flex flex-col gap-2">
+                <!-- rate -->
+                <div class="flex items-center gap-2 mt-3">
+                  <span
+                    class="w-8 h-5 text-sm flex items-center justify-center text-white bg-[#137D3B] border border-[#137D3B] rounded-lg"
+                  >
+                    10
+                  </span>
+                  <span class="text-black"> Exceptional (154 reviews) </span>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h4 class="truncate w-72">Ideal for families and. Groups up to 9 people + cot</h4>
+                  <span class="">Velen</span>
+                </div>
+              </div>
+              <div class="flex flex-col w-72">
+                <span class="text-black text-xl">2391 €</span>
+                <p class="text-black text-sm">
+                  for 1 holiday accommodation, 2 nights <br>
+
+                  195 € per night <br>
+
+                  including taxes & fees
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find accomodation -->
+    <section class="min-h-screen bg-white p-3 lg:p-10">
+      <div class="mt-16">
+        <h3 class="text-black text-3xl">Find the perfect accommodation</h3>
+      </div>
+      <!-- menu -->
+      <div class="hidden lg:flex items-center gap-6 mt-10">
+        <!-- icon 1 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-blue-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+            />
+          </svg>
+          <span class="text-sm text-blue-500">Beachfront</span>
+        </div>
+
+        <!-- icon 2 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Pools</span>
+        </div>
+
+        <!-- icon 3 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Holliday cabins</span>
+        </div>
+
+        <!-- icon 4 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.412 15.655 9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457 3 3m5.457 5.457 7.086 7.086m0 0L21 21"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Lake</span>
+        </div>
+
+        <!-- icon 4 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+            />
+          </svg>
+
+          <span class="text-sm text-black">For families</span>
+        </div>
+
+        <!-- icon 5 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Mountains</span>
+        </div>
+
+        <!-- icon 6 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Wellness</span>
+        </div>
+
+        <!-- icon 7 -->
+        <div class="flex flex-col gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+
+          <span class="text-sm text-black">Pets allowed</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <!-- item 1 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 5 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 6 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 7 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item 8 -->
+        <div
+          class="w-full lg:w-72 h-96 border border-gray-200 rounded-3xl overflow-hidden"
+        >
+          <div class="w-full lg:w-72 h-56 overflow-hidden">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="item"
+              class="w-full h-full object-cover overflow-hidden"
+            />
+          </div>
+
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">House</h6>
+            <div class="flex flex-col gap-2">
+              <span>Ogunquit, USA</span>
+              <div class="flex items-center gap-3">
+                <span class="text-black text-sm">Sleeps 8</span>
+                <span class="text-black text-sm">∙ 3 bedrooms</span>
+                <span class="text-black text-sm">∙ 2 bathrooms</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-black text-2xl text-end mr-2">517 €</span>
+            <div class="flex items-center justify-between px-2">
+              <div class="flex items-center gap-2">
+                <span
+                  class="py-0.5 px-2 bg-[#137D3B] border-[#137D3B] rounded-lg text-white text-xs"
+                  >10.0</span
+                >
+                <span class="text-black text-sm">115 reviews</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-black text-sm">0 per night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-blue-500 my-4 text-sm">View more accommodations</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-4 text-blue-500"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- info -->
+    <section
+      class="p-4 lg:p-6 bg-[#EAF4FF] flex flex-col lg:flex-row items-center border-[#EAF4FF] rounded-3xl mx-0 lg:mx-6 mb-10"
+    >
+      <!-- item 1 -->
+      <div class="flex flex-col lg:flex-row items-center gap-3">
+        <!-- icon -->
+        <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col items-center lg:items-start gap-1">
+          <h3 class="">We know just the right place.</h3>
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
+            On the beach. Or right by the slope. Find accommodations for every
+            occasion.
+          </p>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="flex flex-col lg:flex-row items-center gap-3">
+        <!-- icon -->
+        <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col items-center lg:items-start gap-1">
+          <h3 class="">Carefree with FeWo-direct™</h3>
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
+            If something goes wrong during your stay, we are here for you – we
+            want to find a good solution for you.
+          </p>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="flex flex-col lg:flex-row items-center gap-3">
+        <!-- icon -->
+        <div class="bg-[#AFD0F3] p-2 border border-[#EAF4FF] rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col items-center lg:items-start gap-1">
+          <h3 class="">There for you day and night.</h3>
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
+            Real people. Real support. 24/7 – before, during or after your stay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- meeting -->
+    <section class="meeting-bg mx-3 lg:mx-10 rounded-3xl flex items-center">
+      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-[85%] mx-auto lg:mx-0 lg:w-80 lg:w-96 lg:ml-10">
+        <div class="flex flex-col gap-3">
+          <h3 class="text-black text-2xl">Early bird offers: Save over 80 €</h3>
+          <p class="text-black text-xs md:text-sm text-center lg:text-start">
+            Save a lot if you book early. The average saving is 106 €. Only at
+            selected holiday accommodations.*
+          </p>
+        </div>
+        <button class="p-4 text-white bg-[#181F3B] rounded-full w-32">
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <!-- service -->
+    <section
+      class="min-h-screen bg-white p-3 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+      <!-- item 1 -->
+      <div
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+      >
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="item"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">Top accommodations for spring</h6>
+            <h2 class="text-black text-lg">
+              Pool, beach, lake or rather mountains?
+            </h2>
+          </div>
+          <div class="flex items-center absolute bottom-3 left-3">
+            <button
+              class="py-1.5 px-5 w-56 border text-blue-500 rounded-full text-sm"
+            >
+              Show accommodation
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+      >
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="item"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">
+              On the road with the four-legged friend
+            </h6>
+            <h2 class="text-black text-lg">
+              Take your favorite people and pets with you on your next break
+            </h2>
+          </div>
+          <div class="flex items-center absolute bottom-3 left-3">
+            <button
+              class="py-1.5 px-5 w-80 border text-blue-500 rounded-full text-sm"
+            >
+              Pet Friendly Accommodations Explore
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div
+        class="w-full lg:w-97 h-120 border border-gray-200 bg-gray-50 rounded-3xl overflow-hidden relative"
+      >
+        <div class="w-full lg:w-97 h-80 overflow-hidden">
+          <img
+            src="https://picsum.photos/200/300"
+            alt="item"
+            class="w-full h-full object-cover overflow-hidden"
+          />
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div class="flex flex-col gap-2 p-2">
+            <h6 class="text-black text-sm">Cheering together</h6>
+            <h2 class="text-black text-lg">
+              Discover North America's football cities from your holiday home
+            </h2>
+          </div>
+          <div class="flex items-center absolute bottom-3 left-3">
+            <button
+              class="py-1.5 px-5 w-32 border text-blue-500 rounded-full text-sm"
+            >
+              Book now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cta -->
+
+    <section class="cta-bg mx-3 lg:mx-10 rounded-3xl flex items-center">
+      <div class="flex flex-col gap-4 bg-white rounded-3xl p-4 w-[85%] mx-auto lg:mx-0 lg:w-100 lg:ml-10">
+        <div class="flex flex-col gap-3">
+          <h3 class="text-black text-2xl lg:text-4xl tracking-wide">
+            Rent your accommodation with confidence with FeWo-direkt
+          </h3>
+          <p class="text-black text-sm">
+            Real-time support, fast and hassle-free registration, and guests
+            with positive feedback – at FeWo-direkt, hosting feels like a
+            vacation.
+          </p>
+        </div>
+        <button class="p-4 text-white bg-[#181F3B] rounded-full w-48 text-sm">
+          List accommodation
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F7F6F9] min-h-[60vh] p-6 mt-10">
+      <h1 class="text-blue-500 text-3xl my-6">FeWo-direkt</h1>
+
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-56 mb-6">
+        <!-- content 1 -->
+        <div class="flex gap-4">
+          <!-- link 1 -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-black font-semibold">Explore FeWo directly</h4>
+            <!-- links -->
+            <div class="flex flex-col gap-3">
+              <a href="#" class="text-blue-500 text-sm">List accommodation</a>
+              <a href="#" class="text-blue-500 text-sm"
+                >Carefree with FeWo-direct™</a
+              >
+              <a href="#" class="text-blue-500 text-sm">Trust and security</a>
+              <a href="#" class="text-blue-500 text-sm"
+                >Resources for partners</a
+              >
+              <a href="#" class="text-blue-500 text-sm"
+                >Holiday homes and holiday inspiration</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- content 2 -->
+        <div class="flex gap-4">
+          <!-- link 1 -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-black font-semibold">company</h4>
+            <!-- links -->
+            <div class="flex flex-col gap-3">
+              <a href="#" class="text-blue-500 text-sm">About us</a>
+              <a href="#" class="text-blue-500 text-sm">career</a>
+              <a href="#" class="text-blue-500 text-sm">Affiliate partners</a>
+              <a href="#" class="text-blue-500 text-sm">Press</a>
+              <a href="#" class="text-blue-500 text-sm"
+                >General Terms and Conditions</a
+              >
+              <a href="#" class="text-blue-500 text-sm">Privacy Policy</a>
+              <a href="#" class="text-blue-500 text-sm">Cookie statement</a>
+              <a href="#" class="text-blue-500 text-sm"
+                >Reporting illegal content</a
+              >
+              <a href="#" class="text-blue-500 text-sm">Legal Notice/Contact</a>
+              <a href="#" class="text-blue-500 text-sm">Responsible owner</a>
+              <a href="#" class="text-blue-500 text-sm">The Vrbo family</a>
+              <a href="#" class="text-blue-500 text-sm"
+                >Content policies and reporting of content</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- content 3 -->
+        <div class="flex gap-4">
+          <!-- link 1 -->
+          <div class="flex flex-col gap-4">
+            <h4 class="text-black font-semibold">The Vrbo family</h4>
+            <!-- links -->
+            <div class="flex flex-col gap-3">
+              <a href="#" class="text-blue-500 text-sm">Vrbo</a>
+              <a href="#" class="text-blue-500 text-sm">Abritel.fr</a>
+              <a href="#" class="text-blue-500 text-sm">FeWo-direkt.de</a>
+              <a href="#" class="text-blue-500 text-sm">Bookabach.co.nz</a>
+              <a href="#" class="text-blue-500 text-sm">Stayz.com.au</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <p class="text-black text-xs text-center my-4">
+        © 2026 FeWo-direkt, a company of the Expedia Group. All rights reserved.
+        FeWo-direkt and the FeWo-direkt logo are trademarks or registered
+        trademarks of HomeAway.com, Inc.
+      </span>
+    </footer>
+  </body>
+</html>
